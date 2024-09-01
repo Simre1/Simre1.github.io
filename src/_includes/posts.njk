@@ -1,0 +1,11 @@
+<ul>
+{% for post in posts %}
+  <li>
+    <a href="{{ post.url }}" class="post-preview">
+      <span> {{ post.data.title }} </span>
+      <span> {{ post.data.date | postDate }}<span>
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
